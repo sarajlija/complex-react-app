@@ -13,19 +13,17 @@ import About from "./components/About.js";
 import Terms from "./components/Terms.js";
 import CreatePost from "./components/CreatePost.js";
 import ViewSinglePost from "./components/ViewSinglePost.js";
-import FlashMassages from "./components/FlashMassages.js";
+
 
 function Main() {
 
   const [loggedIn, setLoggedIn]=useState(Boolean(localStorage.getItem("complexappToken")))
   const [FlashMassages, setFlashMassages] = useState([])
 
-  function addFlashMassage() {
 
-  }
   return (
     <BrowserRouter>
-      <FlashMassages />
+    
       <Header loggedIn = {loggedIn} setLoggedIn = {setLoggedIn}/>
 
       <Routes>
